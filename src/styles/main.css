@@ -52,6 +52,7 @@ figure {
 
 figure img {
   display: block;
+  height: auto;
   margin-bottom: -8px !important;
   /* Image already has border from terminal.css */
 }

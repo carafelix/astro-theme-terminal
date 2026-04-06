@@ -38,12 +38,12 @@ Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sap
 
 ## Images
 
-![Terminal Theme Preview](/public/leche.png)
+![Terminal Theme Preview](../assets/zurita_leche.png)
 
 ### Figure with a caption
 
 <figure>
-  <img src="/public/leche.png" alt="Terminal Theme Preview">
+  <img src="../assets/zurita_leche.png" alt="Terminal Theme Preview">
   <figcaption>
     <p>Terminal Theme Preview</p>
   </figcaption>
