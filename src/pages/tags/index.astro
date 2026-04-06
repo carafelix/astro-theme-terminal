@@ -8,14 +8,15 @@ const tagCounts: Record<string, number> = {};
 
 // Count posts per tag
 allPosts.forEach(post => {
-  post.data.tags?.forEach(tag => {
+  post.data.tags?.forEach((tag : string) => {
     tagCounts[tag] = (tagCounts[tag] || 0) + 1;
   });
 });
 
 // Sort tags alphabetically
 const sortedTags = tags.sort((a, b) => a.localeCompare(b));
-const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : import.meta.env.BASE_URL + '/';
+const base = '/';
+// const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : import.meta.env.BASE_URL + '/';
 ---
 
 <BaseLayout title="Tags" description="All tags used in posts">
