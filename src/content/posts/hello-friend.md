@@ -3,7 +3,7 @@ title: 'LECHERÍAS'
 description: 'Se consume la leche / se gasta la vida / Se escribe para no morir'
 pubDate: 2025-08-20
 author: 'Raúl Zurita'
-image: '/public/leche.png'
+image: '../assets/leche.png'
 tags: []
 ---
 

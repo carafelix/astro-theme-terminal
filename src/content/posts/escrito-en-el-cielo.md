@@ -3,7 +3,7 @@ title: 'Escrito en el cielo'
 description: 'Se consume la leche / se gasta la vida / Se escribe para no morir'
 pubDate: 1982-08-20
 author: 'Raúl Zurita'
-image: '/src/assets/en_el_cielo.png'
+image: '../assets/en_el_cielo.png'
 tags: []
 ---
 
