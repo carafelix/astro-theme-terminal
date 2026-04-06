@@ -7,14 +7,17 @@ export async function getStaticPaths() {
     .filter(post => !post.data.draft)
     .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
   
-  return posts.map((post, index) => ({
-    params: { slug: [post.id.replace(/\.[^/.]+$/, '')] },
-    props: {
-      post,
-      prevPost: index < posts.length - 1 ? posts[index + 1] : null,
-      nextPost: index > 0 ? posts[index - 1] : null,
-    },
-  }));
+  return posts.map((post, index) => {
+    const slugValue = (post.data.slug || post.id).toString().replace(/\.[^/.]+$/, '');
+    return {
+      params: { slug: slugValue },
+      props: {
+        post,
+        prevPost: index < posts.length - 1 ? posts[index + 1] : null,
+        nextPost: index > 0 ? posts[index - 1] : null,
+      },
+    };
+  });
 }
 
 const { post, prevPost, nextPost } = Astro.props;

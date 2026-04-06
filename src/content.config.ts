@@ -1,5 +1,5 @@
 import { defineCollection} from 'astro:content';
-import { glob, file } from 'astro/loaders';
+import { glob } from 'astro/loaders';
 import { z } from 'astro/zod';
 
 const posts = defineCollection({
@@ -12,6 +12,7 @@ const posts = defineCollection({
     author: z.string().optional(),
     image: z.string().optional(),
     externalLink: z.string().optional(),
+    slug: z.string().optional(),
     tags: z.array(z.string()).default([]),
     draft: z.boolean().default(false),
   }),
