@@ -52,12 +52,12 @@ const isExternal = !!post.data.externalLink;
   )}
   {post.data.description && (
     <div class="post-content">
-      <p>{post.data.description}</p>
+      {post.data.description.split('\n').map(line => <p>{line}<br></p>)}
     </div>
   )}
   <div>
     <a href={postUrl} class="read-more button inline" target={isExternal ? "_blank" : undefined} rel={isExternal ? "noopener" : undefined}>
-      [Read more]
+      [Leer más]
     </a>
   </div>
 </article>

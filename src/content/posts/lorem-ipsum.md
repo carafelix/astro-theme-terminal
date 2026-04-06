@@ -1,6 +1,6 @@
 ---
 title: 'Lorem Ipsum'
-description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus arcu vel lacus tincidunt, sit amet vestibulum augue vestibulum. Mauris eget massa id ante consequat efficitur. Mauris sit amet augue ut nisi placerat malesuada. Etiam feugiat eros sit amet nunc ultrices iaculis. Curabitur in lorem at justo tempor accumsan quis vel sapien. Phasellus posuere rutrum libero, laoreet scelerisque turpis.'
 pubDate: 2019-03-10
 author: 'Lorem Ipsum'
 tags: []

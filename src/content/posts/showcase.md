@@ -1,12 +1,23 @@
 ---
-title: 'Showcase'
-description: 'This article offers a sample of basic Markdown syntax that can be used in Astro content files, also it shows whether basic HTML elements are decorated with CSS in the Astro Terminal theme.'
+title: 'LOS DESIERTOS RENOMBRADOS'
+description: "
+  Para renombrar los nombres de los desiertos \n
+  Las pampas recobradas \n
+  El Desierto de Notre-Dame \n
+	El Desierto de San Pedro \n
+	El Desierto de Chartres \n
+	El Desierto de Santa Rosa de Lima \n
+	Los desiertos renombrados \n
+	El Desierto de Notre Dame \n[...]"
 pubDate: 2019-03-11
-author: 'Hugo Authors, Radek'
+author: 'Ej'
 tags: []
 ---
+Fundamentación
 
-This article offers a sample of basic Markdown syntax that can be used in Astro content files, also it shows whether basic HTML elements are decorated with CSS in the Astro Terminal theme.
+1. Hoy, en muchos de nuestros países, la vida sucede descompuesta y reprimida por la empresa de apropiación oligárquica de sus medios de existencia.
+
+	El uso material e intelectual del pueblo chileno se sustenta en la ocupación monopólica del discurso ideológico, de la teoría económica y de formas más o menos encubiertas de violencia, como momentos complementarios de la sustitución de la cultura democrática, susceptible de unificar la diversidad de la vida del pueblo en las fundaciones territoriales e históricas de su nacionalidad.
 
 ## Headings
 
@@ -27,12 +38,12 @@ Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sap
 
 ## Images
 
-![Terminal Theme Preview](https://raw.githubusercontent.com/panr/hugo-theme-terminal/refs/heads/master/images/terminal-theme.png?raw=true)
+![Terminal Theme Preview](/public/leche.png)
 
 ### Figure with a caption
 
 <figure>
-  <img src="https://raw.githubusercontent.com/panr/hugo-theme-terminal/refs/heads/master/images/terminal-theme.png?raw=true" alt="Terminal Theme Preview">
+  <img src="/public/leche.png" alt="Terminal Theme Preview">
   <figcaption>
     <p>Terminal Theme Preview</p>
   </figcaption>
