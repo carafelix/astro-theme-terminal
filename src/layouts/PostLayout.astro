@@ -1,6 +1,7 @@
 ---
 import BaseLayout from './BaseLayout.astro';
 import FormattedDate from '../components/FormattedDate.astro';
+import { Image } from 'astro:assets';
 
 export interface Props {
   title: string;
@@ -44,7 +45,7 @@ const base = '/'
     
     {image && (
       <figure class="post-cover">
-        <img src={image} alt={title} />
+          <Image src={import(image)} alt={title} />
       </figure>
     )}
     

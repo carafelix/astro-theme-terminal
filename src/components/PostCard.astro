@@ -1,5 +1,7 @@
 ---
 import FormattedDate from './FormattedDate.astro';
+import { Image } from 'astro:assets';
+import { resolveSrc } from 'astro/assets/utils';
 
 export interface Props {
   post: {
@@ -23,6 +25,7 @@ const base = '/'
 const slug = String(post.data?.slug || post.id).replace(/\.[^/.]+$/, '');
 const postUrl = post.data.externalLink || `${base}posts/${slug}/`;
 const isExternal = !!post.data.externalLink;
+
 ---
 
 <article class="post on-list">
@@ -50,7 +53,7 @@ const isExternal = !!post.data.externalLink;
   )}
   {post.data.image && (
     <figure class="post-cover">
-      <img src={post.data.image} alt={post.data.title} />
+      <Image src={import(post.data.image)} alt={post.data.title} />
     </figure>
   )}
   {post.data.description && (

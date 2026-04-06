@@ -1,7 +1,9 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import PostCard from '../components/PostCard.astro';
+import { Image } from 'astro:assets';
 import { getCollection } from 'astro:content';
+import zuritaImage from '/src/content/assets/zurita_leche.png';
 
 const posts = (await getCollection('posts'))
   .filter(post => !post.data.draft)
@@ -15,7 +17,7 @@ const posts = (await getCollection('posts'))
       Bienvenidos al sitio web que recopila los escritos sobre arte de Raúl Zurita y la consecuente reflexión de Héctor Hernández al respecto.
     </p>
       <figure>
-        <img src="../../src/assets/zurita_leche.png" alt="Terminal Theme Preview">
+        <Image src={zuritaImage} alt="Terminal Theme Preview" />
         <figcaption>
           <p>Raúl en "Para no morir de hambre en el arte" </p>
         </figcaption>
